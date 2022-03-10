@@ -2,6 +2,8 @@ package com.springdatajpa.springboot.repository;
 
 import com.springdatajpa.springboot.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -98,4 +100,23 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findFirst2ByOrderByNameAsc();
 
     List<Product> findTop2ByOrderByPriceDesc();
+
+    // Define JPQL query using @Query annotation with index or position parameters
+    @Query("SELECT p from Product p where p.name = ?1 or p.description = ?2")
+    Product findByNameOrDescriptionJPQLIndexParam(String name, String description);
+
+    // Define JPQL query using @Query annotation with Named parameters
+    @Query("SELECT p from Product p where p.name = :name or p.description = :description")
+    Product findByNameOrDescriptionJPQLNamedParam(@Param("name") String name,
+                                                  @Param("description") String description);
+
+    // Define Native SQL query using @Query annotation with index or position parameters
+    @Query(value = "select * from products p where p.name = ?1 or p.description = ?2", nativeQuery = true)
+    Product findByNameOrDescriptionSQLIndexParam(String name, String description);
+
+    // Define Native SQL query using @Query annotation with Named parameters
+    @Query(value = "select * from products p where p.name = :name or p.description = :description"
+                                                ,nativeQuery = true)
+    Product findByNameOrDescriptionSQLNamedParam(@Param("name") String name,
+                                                 @Param("description") String description);
 }
