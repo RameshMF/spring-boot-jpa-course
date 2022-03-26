@@ -31,6 +31,7 @@ public class OneToManyMappingTest {
         orderItem1.setQuantity(2);
         orderItem1.setPrice(orderItem1.getProduct().getPrice().multiply(new BigDecimal(2)));
         orderItem1.setImageUrl("image1.png");
+        orderItem1.setOrder(order);
         order.getOrderItems().add(orderItem1);
 
         // create order item 2
@@ -39,6 +40,7 @@ public class OneToManyMappingTest {
         orderItem2.setQuantity(3);
         orderItem2.setPrice(orderItem2.getProduct().getPrice().multiply(new BigDecimal(3)));
         orderItem2.setImageUrl("image2.png");
+        orderItem2.setOrder(order);
         order.getOrderItems().add(orderItem2);
 
         order.setTotalPrice(order.getTotalAmount());
