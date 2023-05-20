@@ -2,7 +2,7 @@ package com.springdatajpa.springboot.entity;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Data
 @Entity
