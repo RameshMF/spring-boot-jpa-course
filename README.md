@@ -2,8 +2,4 @@
 Source Code of Learn Spring Data JPA with Hibernate Course
 
 # Udemy Course 
-<a href="https://www.udemy.com/course/learn-spring-data-jpa-with-hibernate/?referralCode=3A842CFE7CA4DF314D76" target="_blank">Learn Spring Data JPA with Hibernate: The Masterclass  </a>
-
-
-# Course on Teachable
-<a href="https://courses.javaguides.net/p/learn-spring-data-jpa-using-hibernate" target="_blank">Learn Spring Data JPA with Hibernate: The Masterclass </a>
+<a href="https://www.udemy.com/course/master-spring-data-jpa-with-hibernate/?referralCode=83ABBA51A8BB3E692F8F" target="_blank">Master Spring Data JPA with Hibernate: E-Commerce Project</a>
