@@ -2,7 +2,7 @@ package com.springdatajpa.springboot.entity;
 
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.math.BigDecimal;
 
 @Getter
