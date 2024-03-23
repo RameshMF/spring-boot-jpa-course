@@ -98,6 +98,10 @@ public class Product {
     @CreationTimestamp
     private LocalDateTime dateCreated;
 
+        //created for pull
+        @Creationtimestamp
+        private LocalDatetime dateCreated2
+
     @UpdateTimestamp
     private LocalDateTime lastUpdated;
 
