@@ -92,8 +92,8 @@ public class Product {
    //added in remote for to pull
     private String imageUrl2;
 
-         //added in remote for merge
-    private String imageUrl3;
+         //deleted in remote for merge
+    
 
     @CreationTimestamp
     private LocalDateTime dateCreated;
