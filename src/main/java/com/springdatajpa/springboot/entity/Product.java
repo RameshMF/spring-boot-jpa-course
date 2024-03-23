@@ -89,18 +89,18 @@ public class Product {
     private boolean active;
     private String imageUrl;
 
-   //added in remote for to pull
+    //added in remote for to pull
     private String imageUrl2;
 
-         //deleted in remote for merge
-    
+    //deleted in remote for merge
+
 
     @CreationTimestamp
     private LocalDateTime dateCreated;
 
-        //created for pull
-        @Creationtimestamp
-        private LocalDatetime dateCreated2
+    //created for pull
+    @CreationTimestamp
+    private LocalDateTime dateCreated2;
 
     @UpdateTimestamp
     private LocalDateTime lastUpdated;
