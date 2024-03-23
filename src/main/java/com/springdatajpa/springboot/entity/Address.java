@@ -22,6 +22,9 @@ public class Address {
     private String country1;
     private String zipCode1;
 
+    //Added in remote
+     private String zipCode5;
+
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "order_id", referencedColumnName = "id")
