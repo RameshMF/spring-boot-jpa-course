@@ -92,6 +92,9 @@ public class Product {
    //added in remote for to pull
     private String imageUrl2;
 
+         //added in remote for merge
+    private String imageUrl3;
+
     @CreationTimestamp
     private LocalDateTime dateCreated;
 
