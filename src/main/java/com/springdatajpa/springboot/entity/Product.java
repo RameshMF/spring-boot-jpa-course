@@ -89,6 +89,9 @@ public class Product {
     private boolean active;
     private String imageUrl;
 
+   //added in remote for to pull
+    private String imageUrl2;
+
     @CreationTimestamp
     private LocalDateTime dateCreated;
 
