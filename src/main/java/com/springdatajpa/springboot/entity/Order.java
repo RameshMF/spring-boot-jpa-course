@@ -40,6 +40,9 @@ public class Order {
         for(OrderItem item: this.orderItems){
             amount = amount.add(item.getPrice());
         }
+        System.out.println ("merge conflict demo 1 from local");
         return amount;
+
+
     }
 }
