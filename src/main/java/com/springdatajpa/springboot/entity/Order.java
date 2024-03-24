@@ -43,6 +43,6 @@ public class Order {
         System.out.println ("merge conflict demo 1 from local");
         return amount;
 
-
+            System.out.println("merge conflict demo");
     }
 }
