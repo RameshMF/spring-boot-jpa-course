@@ -41,5 +41,7 @@ public class Order {
             amount = amount.add(item.getPrice());
         }
         return amount;
+
+            System.out.println("merge conflict demo");
     }
 }
