@@ -102,8 +102,6 @@ public class Product {
     @CreationTimestamp
     private LocalDateTime dateCreated2;
 
-    //Edit a commit message
-
     @UpdateTimestamp
     private LocalDateTime lastUpdated;
 
