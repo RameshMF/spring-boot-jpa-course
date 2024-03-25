@@ -41,6 +41,7 @@ public class Order {
             amount = amount.add(item.getPrice());
         }
         System.out.println ("merge conflict demo 1 from local");
+        System.out.println("this is from feature branch to remote repository");
         return amount;
 
             System.out.println("merge conflict demo");
