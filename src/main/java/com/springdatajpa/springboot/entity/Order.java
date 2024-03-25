@@ -35,11 +35,24 @@ public class Order {
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "order")
     private Set<OrderItem> orderItems = new HashSet<>();
 
+    for (int i =0; i<6; i++){
+    System.out.println("i")
+    }
+
     public BigDecimal getTotalAmount(){
         BigDecimal amount = new BigDecimal(0.0);
         for(OrderItem item: this.orderItems){
             amount = amount.add(item.getPrice());
         }
+
+        System.out.println ("merge conflict demo 1 from local");
+        System.out.println("this is from feature branch to remote repository");
+        for (int i = 0; i < 6; i++) {
+            System.out.println(i);
+        }
+        System.out.println("merge conflict demo");
+        System.out.println("this commit is for merge conflict and needs to be merged with user regeisteration");
         return amount;
-    }
+           }
+        }
 }

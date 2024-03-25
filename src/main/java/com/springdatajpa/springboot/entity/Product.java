@@ -89,13 +89,29 @@ public class Product {
     private boolean active;
     private String imageUrl;
 
+    //added in remote for to pull
+    private String imageUrl2;
+
+    //deleted in remote for merge
+
+
     @CreationTimestamp
     private LocalDateTime dateCreated;
+
+    //created for pull
+    @CreationTimestamp
+    private LocalDateTime dateCreated2;
 
     @UpdateTimestamp
     private LocalDateTime lastUpdated;
 
+    //remote changes in Product for merge conflict that is commited and pr is success
+    private String remotechanges;    
+
     @ManyToOne
     @JoinColumn(name = "category_id", referencedColumnName = "id")
     private ProductCategory category;
+
+    //changes added into product for merge request
+    private String localchanges;
 }
