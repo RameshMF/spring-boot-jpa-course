@@ -47,9 +47,8 @@ public class Order {
             System.out.println("for merge conflict from local");
         }
         System.out.println("merge conflict demo");
+        System.out.println("this commit is for merge conflict and needs to be merged with user regeisteration");
         return amount;
            }
-        System.out.println("this commit is for merge conflict and needs to be merged in master");
-        return amount;
-    }
+        }
 }
