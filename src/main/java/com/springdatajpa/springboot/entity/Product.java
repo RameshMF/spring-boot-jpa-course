@@ -108,4 +108,7 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "category_id", referencedColumnName = "id")
     private ProductCategory category;
+
+    //changes added into product for merge request
+    private String localchanges;
 }
