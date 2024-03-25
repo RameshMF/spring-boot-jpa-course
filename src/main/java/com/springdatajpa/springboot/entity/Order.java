@@ -49,4 +49,7 @@ public class Order {
         System.out.println("merge conflict demo");
         return amount;
            }
+        System.out.println("this commit is for merge conflict and needs to be merged in master");
+        return amount;
+    }
 }
