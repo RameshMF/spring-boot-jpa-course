@@ -40,10 +40,13 @@ public class Order {
         for(OrderItem item: this.orderItems){
             amount = amount.add(item.getPrice());
         }
+
         System.out.println ("merge conflict demo 1 from local");
         System.out.println("this is from feature branch to remote repository");
+        for (int i = 0; i < 6; i++) {
+            System.out.println("for merge conflict from local");
+        }
+        System.out.println("merge conflict demo");
         return amount;
-
-            System.out.println("merge conflict demo");
-    }
+           }
 }
