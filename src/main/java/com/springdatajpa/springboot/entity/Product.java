@@ -105,6 +105,9 @@ public class Product {
     @UpdateTimestamp
     private LocalDateTime lastUpdated;
 
+    //remote changes in Product for merge conflict that is commited and pr is success
+    private String remotechanges;    
+
     @ManyToOne
     @JoinColumn(name = "category_id", referencedColumnName = "id")
     private ProductCategory category;
